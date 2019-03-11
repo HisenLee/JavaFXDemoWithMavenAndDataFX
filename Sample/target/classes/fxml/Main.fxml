@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--BorderPane 上下左右中的布局方式 -->
+<?import javafx.scene.input.KeyCodeCombination?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <!-- 水平盒子-->
+        <HBox prefHeight="10.0" BorderPane.alignment="CENTER">
+            <MenuBar styleClass="top-menu" prefHeight="25.0" HBox.hgrow="ALWAYS">
+                <Menu mnemonicParsing="false" text="菜单">
+                    <MenuItem fx:id="homeMenu" mnemonicParsing="false" text="主页">
+                        <!-- 给菜单项添加快捷方式-->
+                        <accelerator>
+                            <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                        </accelerator>
+                    </MenuItem>
+                    <MenuItem fx:id="demoMenu" mnemonicParsing="false" text="发送请求">
+                        <accelerator>
+                            <KeyCodeCombination alt="UP" code="R" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                        </accelerator>
+                    </MenuItem>
+                </Menu>
+                <Menu mnemonicParsing="false" text="编辑">
+                    <MenuItem fx:id="saveMenu" mnemonicParsing="false" text="保存">
+                        <accelerator>
+                            <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                        </accelerator>
+                    </MenuItem>
+                </Menu>
+            </MenuBar>
+        </HBox>
+    </top>
+    <center>
+
+    </center>
+</BorderPane>

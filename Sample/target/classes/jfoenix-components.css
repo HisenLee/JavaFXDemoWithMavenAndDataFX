@@ -1,0 +1,58 @@
+/*
+ *	Apply google Roboto font to all UI components
+ */
+.root {
+    -fx-font-family: "Roboto";
+    -fx-font-smoothing-type: gray;
+}
+
+/*******************************************************************************
+*                                                                              *
+* JFX Decorator   修改默认的顶部装饰器的样式，包括主边框颜色和宽度                                                          *
+*                                                                              *
+*******************************************************************************/
+.jfx-decorator {
+    -fx-decorator-color: derive(#5264AE, -20%);
+}
+
+.jfx-decorator .jfx-decorator-buttons-container {
+    -fx-background-color: -fx-decorator-color;
+}
+
+.jfx-decorator .resize-border {
+    -fx-border-color: -fx-decorator-color;
+    -fx-border-width: 0 1 1 1;
+}
+
+.jfx-decorator .jfx-decorator-title-container .jfx-decorator-text {
+    -fx-fill: WHITE;
+    -fx-font-size: 16;
+    -fx-background-color: WHITE;
+}
+
+/*******************************************************************************
+*                                                                              *
+* 自定义菜单样式 .top-menu                                                     *
+*                                                                              *
+*******************************************************************************/
+.top-menu .label {
+    -fx-text-fill: #2d2d2d;
+}
+
+.top-menu .menu-item {
+    -fx-padding: 0.3em 1em 0.3em 1em;
+}
+
+.top-menu .context-menu {
+    -fx-min-width: 10em;
+    -fx-padding: 0.1em 0 0 0;
+}
+
+.top-menu .menu-item .label {
+    -fx-text-fill: #2d2d2d;
+}
+
+.top-menu .menu-item .accelerator-text {
+    -fx-text-fill: grey;
+    -fx-padding: 0em 0em 0em 3em;
+}
